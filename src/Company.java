@@ -38,4 +38,14 @@ public class Company implements Iterable<User>{
             return countUser.next();
         }
     }
+
+    public class MyWork implements Iterable<User>{
+
+        @Override
+        public Iterator<User> iterator() {
+            return new iterator2();
+        }
+
+
+    }
 }
